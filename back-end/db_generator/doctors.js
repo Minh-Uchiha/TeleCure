@@ -105,17 +105,22 @@ const specialties = ["Allergy and Immunology",
           let email_address = dr_forename +"."+dr_surname +"@telecure.com";
           let phone_number = faker.phone.number()
           let hospital = hospitals[random_hospital]
+          let experience = randomNumber(5, 11)
+          let av_rating = randomDecimal(3.7, 4.8)
+          let patients_number = randomNumber(10, 1001)
       
           doctors.push({
               "specialty": specialties[i],
               "forename": dr_forename,
               "surname": dr_surname,
+              "title": "Dr.",
               "email": email_address,
               "phone": phone_number,
               "hospital": hospital,
-              "years_expirience": randomNumber(5, 11),
-              "average_ratings": randomDecimal(3.7, 4.8),
-              "available": true
+              "years_expirience":experience,
+              "average_ratings": av_rating,
+              "available": true,
+              "patients_number": patients_number
           });
         }
         //console.log(`doctors: ${doctors}`)
