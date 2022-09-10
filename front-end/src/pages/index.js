@@ -8,3 +8,4 @@ export { default as CancelPaymentPage } from "./CancelPaymentPage";
 export { default as ErrorPage } from "./ErrorPage";
 export { default as SignupPage } from "./SignupPage";
 export { default as AccountPage } from "./AccountPage";
+export { default as AboutPage } from "./AboutPage";

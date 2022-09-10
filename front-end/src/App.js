@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
+  AboutPage,
   AccountPage,
   CancelPaymentPage,
   ChatRoomPage,
@@ -30,6 +31,7 @@ function App() {
           <Route path="/chatroom" element={<ChatRoomPage />} />
           <Route path="/signup" element={<AccountPage />} />
           <Route path="/account" element={<SignupPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
