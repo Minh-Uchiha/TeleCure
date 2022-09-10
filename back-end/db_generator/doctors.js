@@ -88,7 +88,9 @@ const specialties = ["Allergy and Immunology",
       "Clinica Angel Foianini, Santa Cruz"
 
     ]
-    
+    function randomDecimal(min, max){
+      return Math.random() * (max - min) + min;
+    }
     function randomNumber(min, max) { 
       return Math.floor(Math.random() * (max - min) + min);
   } 
@@ -111,7 +113,9 @@ const specialties = ["Allergy and Immunology",
               "email": email_address,
               "phone": phone_number,
               "hospital": hospital,
-              "years_expirience": randomNumber(5, 11)
+              "years_expirience": randomNumber(5, 11),
+              "average_ratings": randomDecimal(3.7, 4.8),
+              "available": true
           });
         }
         //console.log(`doctors: ${doctors}`)
