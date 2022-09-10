@@ -128,7 +128,7 @@ const specialties = ["Allergy and Immunology",
           });
         }
         //console.log(`doctors: ${doctors}`)
-        return { "data": doctors }
+        return { doctors }
       }
       
       let dataObj = generateDoctors();
