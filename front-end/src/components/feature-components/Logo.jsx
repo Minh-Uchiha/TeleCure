@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../css/Logo.css";
 
 const Logo = () => {
   return (
     <div>
-      <Link to="/">Huber</Link>
+      <Link className="logo link" to="/">
+        Tele<span>Cure</span>
+      </Link>
     </div>
   );
 };
