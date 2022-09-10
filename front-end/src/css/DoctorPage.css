@@ -1,0 +1,7 @@
+.doctor-page-container {
+    width: 100vw;
+    padding: 40px 8vw;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+}

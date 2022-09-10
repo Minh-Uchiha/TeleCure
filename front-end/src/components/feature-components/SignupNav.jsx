@@ -1,12 +1,12 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import "../../css/SignupNav.css";
+import { useUserContext } from "../../context/UserContext";
 
 const SignupNav = () => {
-  const [isDoctor, setIsDoctor] = useState(true);
+  const { isDoctor } = useUserContext();
 
   return (
     <div>
