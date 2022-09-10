@@ -6,11 +6,13 @@ const SignupForm = () => {
   const [isSignUp, setIsSignUp] = useState(true);
   const [error, setError] = useState("");
   const [user, setUser] = useState({
-    foreName: "",
-    surName: "",
+    dr_forname: "",
+    dr_surname: "",
     title: "",
     specialty: "",
-    phonenumber: "",
+    hospital: "",
+    years_expirience: "",
+    phone_number: "",
     password: "",
     reenteredPassword: "",
     email: "",
@@ -35,7 +37,7 @@ const SignupForm = () => {
           type="text"
           name="foreName"
           placeholder="First name"
-          value={user.foreName}
+          value={user.fore_name}
           onChange={handleChange}
         />
       </div>
@@ -47,7 +49,7 @@ const SignupForm = () => {
           type="text"
           name="surName"
           placeholder="Last name"
-          value={user.surName}
+          value={user.sur_name}
           onChange={handleChange}
         />
       </div>
@@ -75,6 +77,30 @@ const SignupForm = () => {
           onChange={handleChange}
         />
       </div>
+      <div
+        style={{ display: `${isSignUp ? "block" : "none"}` }}
+        className="input-field"
+      >
+        <input
+          type="text"
+          name="hospital"
+          placeholder="Hospital"
+          value={user.hospital}
+          onChange={handleChange}
+        />
+      </div>
+      <div
+        style={{ display: `${isSignUp ? "block" : "none"}` }}
+        className="input-field"
+      >
+        <input
+          type="text"
+          name="years_expirience"
+          placeholder="Years of Experience"
+          value={user.years_expirience}
+          onChange={handleChange}
+        />
+      </div>
       <div className="input-field">
         <input
           type="text"
@@ -92,7 +118,7 @@ const SignupForm = () => {
           type="text"
           name="phonenumber"
           placeholder="Phone number"
-          value={user.phonenumber}
+          value={user.phone_number}
           onChange={handleChange}
         />
       </div>
