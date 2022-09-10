@@ -1,0 +1,11 @@
+.welcome-option-box .patient-nav {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: #fafafa;
+}
+
+.welcome-option-box .patient-nav .icon {
+    font-size: 3rem;
+    margin-left: 20px;
+}

@@ -1,0 +1,33 @@
+.welcome-option-box {
+    width: 60%;
+    height: 200px;
+    background-color: rgba(99, 91, 255, 0.6);
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.welcome-option-box:hover {
+    background-color:rgba(99, 91, 255, 1);
+}
+
+.welcome-option-box:hover .doctor-nav {
+    color: #fafafa;
+}
+
+.welcome-option-box .doctor-nav {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    transition: all 0.8s;
+    color: #fafafa;
+}
+
+.welcome-option-box .doctor-nav .icon {
+    font-size: 3rem;
+    margin-left: 20px;
+}

@@ -1,0 +1,22 @@
+main.welcome-page {
+    text-align: center;
+    width: 100vw;
+    padding: 50px 8vw;
+}
+
+main.welcome-page h1 {
+    color: #635bff;
+}
+
+main.welcome-page h3 {
+    margin: 30px 0;
+    color: #626668;
+}
+
+main.welcome-page .welcome-options {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 30px;
+    width: 1000px;
+    margin: 0 auto;
+}
