@@ -135,7 +135,7 @@ const specialties = ["Allergy and Immunology",
       var obj_str = util.inspect(dataObj);
      
       console.log(obj_str);
-      fs.writeFile('doctors.json', obj_str, (err) => {
+      fs.writeFile('doctors.txt', obj_str, (err) => {
       
         // In case of a error throw err.
         if (err) throw err;
