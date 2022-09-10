@@ -1,0 +1,20 @@
+.signup-link.link {
+    background-color: #fafafa;
+    border-radius: 7px;
+    padding: 4px 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #635bff;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.signup-link.link:hover {
+    color: #72bbff;
+}
+
+.signup-link.link .icon {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}

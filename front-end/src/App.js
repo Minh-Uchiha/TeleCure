@@ -9,7 +9,8 @@ import {
   DoctorPage,
   ErrorPage,
   PatientPage,
-  SignupPage,
+  DoctorSignupPage,
+  PatientSignupPage,
   SuccessPaymentPage,
   WelcomePage,
 } from "./pages";
@@ -29,8 +30,9 @@ function App() {
           <Route path="/patient" element={<PatientPage />} />
           <Route path="/patient/checkout" element={<CheckoutPage />} />
           <Route path="/chatroom" element={<ChatRoomPage />} />
-          <Route path="/signup" element={<AccountPage />} />
-          <Route path="/account" element={<SignupPage />} />
+          <Route path="/signup/doctor" element={<DoctorSignupPage />} />
+          <Route path="/signup/patient" element={<PatientSignupPage />} />
+          <Route path="/account" element={<AccountPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
