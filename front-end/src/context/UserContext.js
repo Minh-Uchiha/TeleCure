@@ -23,10 +23,13 @@ export const UserProvider = ({ children }) => {
     imageUrl:
       "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   });
+  const [signedIn, setSignedIn] = useState(true);
 
   const setUserToDoctor = (isDoctor) => {
     setIsDoctor(isDoctor);
   };
+
+  const setStatusToSignedIn = (isSignedIn) => setSignedIn(isSignedIn);
 
   const updateUserInfo = (user) => {
     setUserInfo((oldUserInfo) => {
@@ -36,7 +39,14 @@ export const UserProvider = ({ children }) => {
 
   return (
     <UserContext.Provider
-      value={{ isDoctor, userInfo, setUserToDoctor, updateUserInfo }}
+      value={{
+        isDoctor,
+        userInfo,
+        setUserToDoctor,
+        updateUserInfo,
+        setStatusToSignedIn,
+        signedIn,
+      }}
     >
       {children}
     </UserContext.Provider>

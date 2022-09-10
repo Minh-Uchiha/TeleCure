@@ -1,0 +1,48 @@
+.patient-page .greettings h1 {
+    color: #635bff;
+    font-size: 4rem;
+}
+
+.patient-page .greettings .link {
+    color: #ae00ff;
+    transition: all 0.5s;
+    margin-left: 20px;
+}
+
+.patient-page .greettings .link {
+    text-decoration: underline;
+}
+
+.patient-page .greettings .link:hover {
+    color: #d373ff;
+}
+
+.patient-page {
+    width: 80vw;
+    margin: 40px auto;
+}
+
+.make-appointment-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.make-appointment-container button {
+    padding: 30px 20vw;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.3rem;
+    color: #ae00ff;
+    font-weight: 600;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.make-appointment-container button:hover {
+    color: #f1f1f1;
+    background-color: #ae00ff;
+}
