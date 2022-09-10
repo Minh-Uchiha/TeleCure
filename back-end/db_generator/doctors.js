@@ -98,7 +98,7 @@ const specialties = ["Allergy and Immunology",
 
         let doctors = []
       
-        for (var i=0; i <= specialties.length; i++) {
+        for (var i=0; i < specialties.length; i++) {
           const random_hospital= Math.floor(Math.random() * hospitals.length);
           let dr_forename = faker.name.firstName();
           let dr_surname = faker.name.lastName();
@@ -113,14 +113,14 @@ const specialties = ["Allergy and Immunology",
       
           doctors.push({
               "specialty": specialties[i],
-              "forename": dr_forename,
-              "surname": dr_surname,
+              "dr_forename": dr_forename,
+              "dr_surname": dr_surname,
               "title": "Dr.",
-              "email": email_address,
-              "phone": phone_number,
+              "email_address": email_address,
+              "phone_number": phone_number,
               "hospital": hospital,
               "years_expirience":experience,
-              "average_ratings": av_rating,
+              "average_ratings": av_rating.toFixed(2),
               "available": true,
               "patients_number": patients_number,
               "earnings": earnings.toFixed(2),
