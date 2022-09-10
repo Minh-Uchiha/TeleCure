@@ -89,7 +89,9 @@ const specialties = ["Allergy and Immunology",
 
     ]
     
-
+    function randomNumber(min, max) { 
+      return Math.floor(Math.random() * (max - min) + min);
+  } 
     function generateDoctors() {
 
         let doctors = []
@@ -108,7 +110,8 @@ const specialties = ["Allergy and Immunology",
               "surname": dr_surname,
               "email": email_address,
               "phone": phone_number,
-              "hospital": hospital
+              "hospital": hospital,
+              "years_expirience": randomNumber(5, 11)
           });
         }
         //console.log(`doctors: ${doctors}`)
@@ -133,7 +136,7 @@ const specialties = ["Allergy and Immunology",
     //      "net_earnings":NumberLong(),
     //      "years_experience":NumberLong(),
     //      "hospital":"",
-    //      "rating":"",
+    //      "average_rating":"",
     //      "patients_number": NumberLong()
     //     "appointments":[
     //         {
