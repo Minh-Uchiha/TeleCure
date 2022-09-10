@@ -3,3 +3,8 @@ export { default as CheckoutPage } from "./CheckoutPage";
 export { default as WelcomePage } from "./WelcomePage";
 export { default as DoctorPage } from "./DoctorPage";
 export { default as PatientPage } from "./PatientPage";
+export { default as SuccessPaymentPage } from "./SuccessPaymentPage";
+export { default as CancelPaymentPage } from "./CancelPaymentPage";
+export { default as ErrorPage } from "./ErrorPage";
+export { default as SignupPage } from "./SignupPage";
+export { default as AccountPage } from "./AccountPage";
