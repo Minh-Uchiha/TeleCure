@@ -1,0 +1,11 @@
+.checkout-container h1 {
+    color: #ae00ff;
+    font-size: 4rem;
+}
+
+.checkout-container {
+    width: 100vw;
+    height: 500px;
+    padding: 100px;
+    text-align: center;
+}
