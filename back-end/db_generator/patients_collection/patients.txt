@@ -6,7 +6,6 @@
       title: 'Sir',
       email_address: 'Onie.Hansen@myemail.com',
       phone_number: '503-536-4199',
-      dob: 1979-09-07T20:26:11.658Z,
       job_title: 'Future Accounts Strategist'
     },
     {
@@ -15,7 +14,6 @@
       title: 'Mr',
       email_address: 'Florian.Rippin@myemail.com',
       phone_number: '1-555-690-6271 x24683',
-      dob: 1962-12-10T00:30:53.558Z,
       job_title: 'National Creative Producer'
     },
     {
@@ -24,7 +22,6 @@
       title: 'Sir',
       email_address: 'Paula.Koepp@myemail.com',
       phone_number: '1-674-315-9078',
-      dob: 1936-02-21T10:32:32.135Z,
       job_title: 'Regional Division Architect'
     },
     {
@@ -33,7 +30,6 @@
       title: 'Madam',
       email_address: 'Teagan.Bartoletti@myemail.com',
       phone_number: '883-755-6629 x438',
-      dob: 1984-08-27T14:57:35.915Z,
       job_title: 'Global Paradigm Strategist'
     },
     {
@@ -42,7 +38,6 @@
       title: 'Madam',
       email_address: 'Kris.Koelpin@myemail.com',
       phone_number: '(914) 693-3656 x484',
-      dob: 1976-10-09T03:08:30.453Z,
       job_title: 'Global Accounts Designer'
     },
     {
@@ -51,7 +46,6 @@
       title: 'Ms',
       email_address: 'Irwin.Wunsch@myemail.com',
       phone_number: '(818) 838-5094',
-      dob: 1967-11-17T00:07:42.839Z,
       job_title: 'Legacy Markets Coordinator'
     },
     {
@@ -60,7 +54,6 @@
       title: 'Sir',
       email_address: 'Kane.Zboncak@myemail.com',
       phone_number: '1-408-552-0588 x17013',
-      dob: 1943-08-17T19:29:25.496Z,
       job_title: 'Internal Security Associate'
     },
     {
@@ -69,7 +62,6 @@
       title: 'Mr',
       email_address: 'Chesley.Upton@myemail.com',
       phone_number: '235.724.0310',
-      dob: 1930-04-03T16:44:23.924Z,
       job_title: 'Corporate Group Consultant'
     },
     {
@@ -78,7 +70,6 @@
       title: 'Miss',
       email_address: 'Gonzalo.Rogahn@myemail.com',
       phone_number: '1-836-761-2405',
-      dob: 1958-01-05T01:35:10.809Z,
       job_title: 'Regional Web Agent'
     },
     {
@@ -87,7 +78,6 @@
       title: 'Madam',
       email_address: 'Conner.Yundt@myemail.com',
       phone_number: '(251) 378-2990 x972',
-      dob: 1968-10-28T19:13:06.528Z,
       job_title: 'Central Markets Analyst'
     },
     {
@@ -96,7 +86,6 @@
       title: 'Madam',
       email_address: 'Sidney.Krajcik@myemail.com',
       phone_number: '(527) 680-5033 x22102',
-      dob: 2001-06-19T02:26:07.597Z,
       job_title: 'Direct Accounts Analyst'
     },
     {
@@ -105,7 +94,6 @@
       title: 'Sir',
       email_address: 'Zoey.Bogan@myemail.com',
       phone_number: '992-695-4530 x558',
-      dob: 1988-05-23T12:03:01.132Z,
       job_title: 'Investor Communications Orchestrator'
     },
     {
@@ -114,7 +102,6 @@
       title: 'Sir',
       email_address: 'Maryse.Yost@myemail.com',
       phone_number: '579.704.5856',
-      dob: 1948-01-19T08:04:03.262Z,
       job_title: 'Future Interactions Liaison'
     },
     {
@@ -123,7 +110,6 @@
       title: 'Madam',
       email_address: 'Anderson.Welch@myemail.com',
       phone_number: '1-401-659-6413',
-      dob: 1964-03-26T20:44:45.512Z,
       job_title: 'International Markets Supervisor'
     },
     {
@@ -132,7 +118,6 @@
       title: 'Mrs',
       email_address: 'Helen.Greenholt@myemail.com',
       phone_number: '(719) 534-1059',
-      dob: 1962-12-26T05:59:37.983Z,
       job_title: 'Internal Web Officer'
     },
     {
@@ -141,7 +126,6 @@
       title: 'Sir',
       email_address: 'Gino.Schuppe@myemail.com',
       phone_number: '585.410.8910 x8240',
-      dob: 1935-06-11T20:47:47.354Z,
       job_title: 'Regional Factors Agent'
     },
     {
@@ -150,7 +134,6 @@
       title: 'Mrs',
       email_address: 'Harrison.Hahn@myemail.com',
       phone_number: '(795) 609-1686 x15842',
-      dob: 1964-07-19T21:41:44.667Z,
       job_title: 'National Applications Facilitator'
     },
     {
@@ -159,7 +142,6 @@
       title: 'Mrs',
       email_address: 'Maximilian.Hermiston@myemail.com',
       phone_number: '758.369.0563 x63690',
-      dob: 1965-08-01T20:04:27.422Z,
       job_title: 'National Tactics Manager'
     },
     {
@@ -168,7 +150,6 @@
       title: 'Mrs',
       email_address: 'Norwood.Kshlerin@myemail.com',
       phone_number: '(634) 316-5537',
-      dob: 1973-04-16T20:48:05.006Z,
       job_title: 'Direct Branding Orchestrator'
     },
     {
@@ -177,7 +158,6 @@
       title: 'Sir',
       email_address: 'Robb.Schaefer@myemail.com',
       phone_number: '(486) 909-8279',
-      dob: 1995-07-05T06:06:17.369Z,
       job_title: 'Global Security Producer'
     },
     {
@@ -186,7 +166,6 @@
       title: 'Sir',
       email_address: "Evert.O'Kon@myemail.com",
       phone_number: '(367) 939-3793 x486',
-      dob: 1977-01-02T07:59:06.138Z,
       job_title: 'Corporate Identity Orchestrator'
     },
     {
@@ -195,7 +174,6 @@
       title: 'Ms',
       email_address: 'Kendall.Rosenbaum@myemail.com',
       phone_number: '1-957-877-3864 x893',
-      dob: 1997-07-13T15:32:08.774Z,
       job_title: 'Senior Web Manager'
     },
     {
@@ -204,7 +182,6 @@
       title: 'Sir',
       email_address: 'Berry.Hintz@myemail.com',
       phone_number: '584.851.4956 x91095',
-      dob: 1942-07-20T15:31:59.375Z,
       job_title: 'Regional Security Architect'
     },
     {
@@ -213,7 +190,6 @@
       title: 'Mr',
       email_address: 'Connor.Barrows@myemail.com',
       phone_number: '611-530-4634',
-      dob: 1994-12-09T09:45:14.355Z,
       job_title: 'District Identity Analyst'
     },
     {
@@ -222,7 +198,6 @@
       title: 'Madam',
       email_address: 'Laney.Toy@myemail.com',
       phone_number: '233-669-4445',
-      dob: 1948-12-20T05:12:51.403Z,
       job_title: 'Global Security Agent'
     },
     {
@@ -231,7 +206,6 @@
       title: 'Mrs',
       email_address: 'Braeden.Donnelly@myemail.com',
       phone_number: '258.979.2171 x0206',
-      dob: 1948-10-31T16:21:29.800Z,
       job_title: 'Human Paradigm Technician'
     },
     {
@@ -240,7 +214,6 @@
       title: 'Mrs',
       email_address: 'Devyn.Cummings@myemail.com',
       phone_number: '334-334-3867 x6516',
-      dob: 1979-11-06T23:32:13.723Z,
       job_title: 'Direct Web Analyst'
     },
     {
@@ -249,7 +222,6 @@
       title: 'Sir',
       email_address: 'Willard.Senger@myemail.com',
       phone_number: '803.938.1620 x58210',
-      dob: 1936-01-18T01:53:20.807Z,
       job_title: 'Dynamic Web Supervisor'
     },
     {
@@ -258,7 +230,6 @@
       title: 'Ms',
       email_address: 'Lavon.Ferry@myemail.com',
       phone_number: '790.888.0638 x1666',
-      dob: 1938-05-03T07:33:08.766Z,
       job_title: 'Customer Identity Producer'
     },
     {
@@ -267,7 +238,6 @@
       title: 'Ms',
       email_address: 'Libby.Anderson@myemail.com',
       phone_number: '467.457.3334 x271',
-      dob: 1959-11-04T14:27:24.524Z,
       job_title: 'Regional Accounts Developer'
     },
     {
@@ -276,7 +246,6 @@
       title: 'Miss',
       email_address: 'Zita.Leannon@myemail.com',
       phone_number: '(367) 824-3509 x54338',
-      dob: 1965-03-28T22:15:22.506Z,
       job_title: 'Forward Operations Representative'
     },
     {
@@ -285,7 +254,6 @@
       title: 'Madam',
       email_address: 'Concepcion.Goodwin@myemail.com',
       phone_number: '(434) 876-4282 x2166',
-      dob: 1993-05-05T03:09:49.346Z,
       job_title: 'Future Solutions Executive'
     },
     {
@@ -294,7 +262,6 @@
       title: 'Madam',
       email_address: 'Joanne.Ankunding@myemail.com',
       phone_number: '270.885.1978 x32991',
-      dob: 1931-08-30T12:41:43.953Z,
       job_title: 'Dynamic Configuration Representative'
     },
     {
@@ -303,7 +270,6 @@
       title: 'Mrs',
       email_address: 'Jamir.Johns@myemail.com',
       phone_number: '1-730-549-8438',
-      dob: 1943-05-19T05:53:34.335Z,
       job_title: 'Dynamic Response Planner'
     },
     {
@@ -312,7 +278,6 @@
       title: 'Mr',
       email_address: 'Verla.Walker@myemail.com',
       phone_number: '810-553-7467',
-      dob: 1990-08-21T05:01:47.280Z,
       job_title: 'Dynamic Applications Orchestrator'
     },
     {
@@ -321,7 +286,6 @@
       title: 'Miss',
       email_address: 'Issac.McCullough@myemail.com',
       phone_number: '346-441-8278 x9856',
-      dob: 1981-09-18T22:59:23.265Z,
       job_title: 'Forward Infrastructure Specialist'
     },
     {
@@ -330,7 +294,6 @@
       title: 'Mrs',
       email_address: 'Hilma.Abbott@myemail.com',
       phone_number: '528-374-3642 x942',
-      dob: 1968-09-23T03:01:43.414Z,
       job_title: 'Future Configuration Supervisor'
     },
     {
@@ -339,7 +302,6 @@
       title: 'Madam',
       email_address: 'Lola.Hickle@myemail.com',
       phone_number: '940-232-4682 x2491',
-      dob: 1963-11-18T17:10:09.705Z,
       job_title: 'Product Solutions Assistant'
     },
     {
@@ -348,7 +310,6 @@
       title: 'Mr',
       email_address: 'Vito.Franecki@myemail.com',
       phone_number: '608-732-0043 x48025',
-      dob: 1940-05-25T10:47:47.248Z,
       job_title: 'Internal Markets Architect'
     },
     {
@@ -357,7 +318,6 @@
       title: 'Sir',
       email_address: 'Gladys.Schimmel@myemail.com',
       phone_number: '1-271-295-3109',
-      dob: 1935-09-11T18:39:46.234Z,
       job_title: 'Human Brand Agent'
     },
     {
@@ -366,7 +326,6 @@
       title: 'Mr',
       email_address: 'Elva.Ferry@myemail.com',
       phone_number: '(336) 469-9297',
-      dob: 1959-11-03T00:25:44.688Z,
       job_title: 'District Directives Architect'
     },
     {
@@ -375,7 +334,6 @@
       title: 'Sir',
       email_address: 'Amparo.Stehr@myemail.com',
       phone_number: '696.991.3472 x859',
-      dob: 1936-08-12T02:11:21.174Z,
       job_title: 'Internal Metrics Coordinator'
     },
     {
@@ -384,7 +342,6 @@
       title: 'Miss',
       email_address: 'Elvera.Bradtke@myemail.com',
       phone_number: '1-347-587-2260 x331',
-      dob: 1987-10-14T09:17:45.990Z,
       job_title: 'Senior Directives Facilitator'
     },
     {
@@ -393,7 +350,6 @@
       title: 'Mr',
       email_address: 'Trenton.Erdman@myemail.com',
       phone_number: '(941) 339-2859 x6702',
-      dob: 1943-05-30T02:39:39.978Z,
       job_title: 'Senior Creative Representative'
     },
     {
@@ -402,7 +358,6 @@
       title: 'Miss',
       email_address: 'Perry.Kemmer@myemail.com',
       phone_number: '(651) 828-1606 x74030',
-      dob: 1932-11-10T13:19:16.563Z,
       job_title: 'Regional Tactics Officer'
     },
     {
@@ -411,7 +366,6 @@
       title: 'Miss',
       email_address: 'Freida.Harber@myemail.com',
       phone_number: '991-225-3631 x440',
-      dob: 2000-06-16T10:00:21.871Z,
       job_title: 'Internal Assurance Officer'
     },
     {
@@ -420,7 +374,6 @@
       title: 'Ms',
       email_address: "Sierra.O'Kon@myemail.com",
       phone_number: '891-770-2636 x87210',
-      dob: 1957-03-24T11:23:56.873Z,
       job_title: 'Chief Interactions Associate'
     },
     {
@@ -429,7 +382,6 @@
       title: 'Mrs',
       email_address: 'Camryn.Williamson@myemail.com',
       phone_number: '619-543-1636 x565',
-      dob: 1934-04-30T04:45:24.153Z,
       job_title: 'Forward Interactions Officer'
     },
     {
@@ -438,7 +390,6 @@
       title: 'Miss',
       email_address: 'Miles.Franey@myemail.com',
       phone_number: '(506) 704-2021',
-      dob: 1934-03-16T12:19:38.764Z,
       job_title: 'Senior Operations Engineer'
     },
     {
@@ -447,7 +398,6 @@
       title: 'Sir',
       email_address: 'Coty.Lowe@myemail.com',
       phone_number: '491-642-8822',
-      dob: 1963-05-21T13:09:15.471Z,
       job_title: 'District Response Liaison'
     },
     {
@@ -456,7 +406,6 @@
       title: 'Miss',
       email_address: 'Jaylin.Weber@myemail.com',
       phone_number: '829-399-3766 x58031',
-      dob: 1988-09-09T19:17:38.433Z,
       job_title: 'International Identity Administrator'
     },
     {
@@ -465,7 +414,6 @@
       title: 'Miss',
       email_address: 'Magdalen.Halvorson@myemail.com',
       phone_number: '(650) 277-4536 x926',
-      dob: 1937-12-12T03:54:55.210Z,
       job_title: 'Dynamic Applications Director'
     },
     {
@@ -474,7 +422,6 @@
       title: 'Ms',
       email_address: 'Delta.Braun@myemail.com',
       phone_number: '(661) 626-9859',
-      dob: 1949-09-29T07:47:20.340Z,
       job_title: 'National Accounts Supervisor'
     },
     {
@@ -483,7 +430,6 @@
       title: 'Miss',
       email_address: 'Isidro.Hammes@myemail.com',
       phone_number: '1-846-999-3377',
-      dob: 1940-06-23T04:52:36.508Z,
       job_title: 'Customer Creative Designer'
     },
     {
@@ -492,7 +438,6 @@
       title: 'Mrs',
       email_address: 'Sven.Osinski@myemail.com',
       phone_number: '(285) 681-7552 x35816',
-      dob: 1952-10-30T15:35:48.152Z,
       job_title: 'International Implementation Coordinator'
     },
     {
@@ -501,7 +446,6 @@
       title: 'Ms',
       email_address: 'Rasheed.Grant@myemail.com',
       phone_number: '811-316-7361 x26540',
-      dob: 1994-10-03T12:52:29.911Z,
       job_title: 'District Configuration Administrator'
     },
     {
@@ -510,7 +454,6 @@
       title: 'Ms',
       email_address: 'Ebba.Kuhn@myemail.com',
       phone_number: '882.434.6610',
-      dob: 1990-01-02T14:49:17.738Z,
       job_title: 'Lead Solutions Engineer'
     },
     {
@@ -519,7 +462,6 @@
       title: 'Sir',
       email_address: 'Selmer.Powlowski@myemail.com',
       phone_number: '(876) 826-0210 x86821',
-      dob: 1954-01-03T10:38:20.046Z,
       job_title: 'Regional Mobility Designer'
     },
     {
@@ -528,7 +470,6 @@
       title: 'Ms',
       email_address: 'Linwood.Lemke@myemail.com',
       phone_number: '878-653-4269 x0079',
-      dob: 2000-08-26T13:54:26.632Z,
       job_title: 'Human Factors Architect'
     },
     {
@@ -537,7 +478,6 @@
       title: 'Madam',
       email_address: 'Angelita.Kuhlman@myemail.com',
       phone_number: '1-934-571-9589 x011',
-      dob: 1983-03-16T10:51:32.471Z,
       job_title: 'International Security Architect'
     },
     {
@@ -546,7 +486,6 @@
       title: 'Miss',
       email_address: 'Ted.Kozey@myemail.com',
       phone_number: '520.276.6394',
-      dob: 1997-07-25T13:01:00.837Z,
       job_title: 'Customer Security Assistant'
     },
     {
@@ -555,7 +494,6 @@
       title: 'Mrs',
       email_address: 'Burdette.Ratke@myemail.com',
       phone_number: '857.587.2583 x215',
-      dob: 1942-12-08T08:35:16.469Z,
       job_title: 'National Brand Officer'
     },
     {
@@ -564,7 +502,6 @@
       title: 'Mrs',
       email_address: 'Forrest.Bruen@myemail.com',
       phone_number: '1-730-710-4482 x00198',
-      dob: 1967-10-05T18:44:22.741Z,
       job_title: 'National Infrastructure Planner'
     },
     {
@@ -573,7 +510,6 @@
       title: 'Mrs',
       email_address: 'Alize.Yundt@myemail.com',
       phone_number: '1-788-993-5918 x566',
-      dob: 1972-09-21T14:38:54.284Z,
       job_title: 'National Identity Analyst'
     },
     {
@@ -582,7 +518,6 @@
       title: 'Madam',
       email_address: 'Felipe.Mills@myemail.com',
       phone_number: '1-208-853-4603 x5691',
-      dob: 1991-01-17T16:21:59.386Z,
       job_title: 'Future Functionality Manager'
     },
     {
@@ -591,7 +526,6 @@
       title: 'Sir',
       email_address: 'Angel.DuBuque@myemail.com',
       phone_number: '(236) 594-5097',
-      dob: 1956-10-17T17:05:31.466Z,
       job_title: 'Corporate Quality Agent'
     },
     {
@@ -600,7 +534,6 @@
       title: 'Miss',
       email_address: 'Jakob.Glover@myemail.com',
       phone_number: '1-671-520-3378',
-      dob: 1948-11-02T02:18:31.286Z,
       job_title: 'Central Branding Director'
     },
     {
@@ -609,7 +542,6 @@
       title: 'Madam',
       email_address: 'Neal.Howell@myemail.com',
       phone_number: '498-945-3011',
-      dob: 1990-09-13T09:58:30.279Z,
       job_title: 'National Infrastructure Orchestrator'
     },
     {
@@ -618,7 +550,6 @@
       title: 'Miss',
       email_address: 'Nikki.Marquardt@myemail.com',
       phone_number: '(885) 694-9678 x55753',
-      dob: 1938-01-18T11:54:06.719Z,
       job_title: 'National Optimization Liaison'
     },
     {
@@ -627,7 +558,6 @@
       title: 'Sir',
       email_address: 'Vilma.Murray@myemail.com',
       phone_number: '(778) 478-2335 x015',
-      dob: 1978-09-10T03:07:30.297Z,
       job_title: 'Lead Paradigm Facilitator'
     },
     {
@@ -636,7 +566,6 @@
       title: 'Sir',
       email_address: 'Camila.King@myemail.com',
       phone_number: '(945) 767-9787',
-      dob: 1998-11-21T05:06:24.947Z,
       job_title: 'Legacy Applications Officer'
     },
     {
@@ -645,7 +574,6 @@
       title: 'Madam',
       email_address: 'Jada.Hilll@myemail.com',
       phone_number: '913.480.6842 x4731',
-      dob: 1996-06-07T03:03:41.575Z,
       job_title: 'Lead Metrics Consultant'
     },
     {
@@ -654,7 +582,6 @@
       title: 'Sir',
       email_address: 'Taurean.Cormier@myemail.com',
       phone_number: '(845) 862-4286 x543',
-      dob: 1964-03-22T18:21:19.711Z,
       job_title: 'Lead Interactions Designer'
     },
     {
@@ -663,7 +590,6 @@
       title: 'Mrs',
       email_address: 'Eldon.Cormier@myemail.com',
       phone_number: '(919) 774-3869 x32153',
-      dob: 1970-05-17T11:20:29.318Z,
       job_title: 'Principal Accountability Developer'
     },
     {
@@ -672,7 +598,6 @@
       title: 'Sir',
       email_address: 'Joana.Collier@myemail.com',
       phone_number: '346.469.9005',
-      dob: 1950-03-25T05:21:02.725Z,
       job_title: 'Product Operations Planner'
     },
     {
@@ -681,7 +606,6 @@
       title: 'Madam',
       email_address: 'Ona.Feeney@myemail.com',
       phone_number: '675-375-9788',
-      dob: 1951-01-23T17:12:30.521Z,
       job_title: 'International Division Officer'
     },
     {
@@ -690,7 +614,6 @@
       title: 'Mr',
       email_address: 'Golden.Koch@myemail.com',
       phone_number: '(287) 404-1639 x6499',
-      dob: 1948-07-03T14:28:55.348Z,
       job_title: 'National Brand Executive'
     },
     {
@@ -699,7 +622,6 @@
       title: 'Mr',
       email_address: 'Jaylon.Bogan@myemail.com',
       phone_number: '1-992-711-7582',
-      dob: 1931-09-13T20:18:55.264Z,
       job_title: 'Dynamic Identity Developer'
     },
     {
@@ -708,7 +630,6 @@
       title: 'Mr',
       email_address: 'Corine.Kuvalis@myemail.com',
       phone_number: '604.751.7331 x388',
-      dob: 1962-06-10T15:29:53.844Z,
       job_title: 'Investor Communications Technician'
     },
     {
@@ -717,7 +638,6 @@
       title: 'Miss',
       email_address: 'Destini.Robel@myemail.com',
       phone_number: '740.325.9090',
-      dob: 1998-06-17T00:05:54.888Z,
       job_title: 'Forward Optimization Supervisor'
     },
     {
@@ -726,7 +646,6 @@
       title: 'Miss',
       email_address: 'Marina.Jakubowski@myemail.com',
       phone_number: '481.707.4805 x7684',
-      dob: 1935-10-05T03:10:23.447Z,
       job_title: 'Internal Operations Architect'
     },
     {
@@ -735,7 +654,6 @@
       title: 'Mrs',
       email_address: 'Thaddeus.Waelchi@myemail.com',
       phone_number: '(915) 552-2446 x3373',
-      dob: 1940-03-11T13:15:44.680Z,
       job_title: 'Internal Directives Manager'
     },
     {
@@ -744,7 +662,6 @@
       title: 'Ms',
       email_address: 'Jettie.Johnson@myemail.com',
       phone_number: '535.584.2066 x02662',
-      dob: 1993-05-01T10:54:48.436Z,
       job_title: 'Central Branding Strategist'
     },
     {
@@ -753,7 +670,6 @@
       title: 'Ms',
       email_address: 'Jennings.Dach@myemail.com',
       phone_number: '860.510.8491 x8635',
-      dob: 1974-03-21T17:21:19.272Z,
       job_title: 'International Creative Designer'
     },
     {
@@ -762,7 +678,6 @@
       title: 'Madam',
       email_address: 'Myah.Stokes@myemail.com',
       phone_number: '1-552-434-0187 x618',
-      dob: 1943-03-12T01:23:07.927Z,
       job_title: 'Regional Assurance Developer'
     },
     {
@@ -771,7 +686,6 @@
       title: 'Mr',
       email_address: 'Andres.Buckridge@myemail.com',
       phone_number: '1-987-492-8464 x253',
-      dob: 1992-02-10T06:23:20.967Z,
       job_title: 'Dynamic Paradigm Liaison'
     },
     {
@@ -780,7 +694,6 @@
       title: 'Mr',
       email_address: 'Maryjane.Vandervort@myemail.com',
       phone_number: '411.258.5702',
-      dob: 1972-04-06T06:09:40.437Z,
       job_title: 'Regional Division Coordinator'
     },
     {
@@ -789,7 +702,6 @@
       title: 'Ms',
       email_address: 'Maggie.Smith@myemail.com',
       phone_number: '1-393-351-8258',
-      dob: 1988-07-20T03:20:42.026Z,
       job_title: 'Chief Usability Administrator'
     },
     {
@@ -798,7 +710,6 @@
       title: 'Ms',
       email_address: 'Rhoda.Lynch@myemail.com',
       phone_number: '747.420.7425',
-      dob: 1965-04-28T22:34:02.257Z,
       job_title: 'Chief Paradigm Executive'
     },
     {
@@ -807,7 +718,6 @@
       title: 'Mrs',
       email_address: 'Tyler.Steuber@myemail.com',
       phone_number: '306.222.7090 x40760',
-      dob: 1957-10-31T14:09:04.374Z,
       job_title: 'Human Solutions Director'
     },
     {
@@ -816,7 +726,6 @@
       title: 'Ms',
       email_address: 'Patsy.Nikolaus@myemail.com',
       phone_number: '976-864-7526 x06089',
-      dob: 1979-07-25T23:15:41.961Z,
       job_title: 'Dynamic Mobility Manager'
     },
     {
@@ -825,7 +734,6 @@
       title: 'Miss',
       email_address: 'Marlee.Hackett@myemail.com',
       phone_number: '906-471-6800',
-      dob: 1961-03-24T19:39:55.201Z,
       job_title: 'Future Branding Strategist'
     },
     {
@@ -834,7 +742,6 @@
       title: 'Mr',
       email_address: 'Keshaun.Wisozk@myemail.com',
       phone_number: '1-574-950-2440 x92993',
-      dob: 1996-06-24T10:13:45.342Z,
       job_title: 'National Response Representative'
     },
     {
@@ -843,7 +750,6 @@
       title: 'Sir',
       email_address: 'Quinten.Klein@myemail.com',
       phone_number: '1-326-400-0497',
-      dob: 1998-07-07T14:58:40.835Z,
       job_title: 'Regional Infrastructure Manager'
     },
     {
@@ -852,7 +758,6 @@
       title: 'Mr',
       email_address: 'Cecile.MacGyver@myemail.com',
       phone_number: '(436) 634-9355 x65636',
-      dob: 1970-08-10T21:29:31.218Z,
       job_title: 'Customer Accountability Supervisor'
     },
     {
@@ -861,7 +766,6 @@
       title: 'Mr',
       email_address: 'Tracy.Sauer@myemail.com',
       phone_number: '807.340.4094 x6452',
-      dob: 1954-07-01T04:13:56.927Z,
       job_title: 'Future Assurance Technician'
     },
     {
@@ -870,7 +774,6 @@
       title: 'Sir',
       email_address: 'Mellie.Hand@myemail.com',
       phone_number: '658.438.8199 x0320',
-      dob: 1966-06-22T09:39:48.503Z,
       job_title: 'Dynamic Branding Developer'
     },
     {
@@ -879,7 +782,6 @@
       title: 'Madam',
       email_address: 'Adelia.Predovic@myemail.com',
       phone_number: '1-751-502-6163',
-      dob: 1959-10-25T04:45:25.862Z,
       job_title: 'Principal Branding Administrator'
     },
     {
@@ -888,7 +790,6 @@
       title: 'Mrs',
       email_address: 'Maeve.Lubowitz@myemail.com',
       phone_number: '(873) 939-8334 x646',
-      dob: 1933-09-30T19:48:36.581Z,
       job_title: 'Human Usability Consultant'
     },
     {
@@ -897,7 +798,6 @@
       title: 'Mr',
       email_address: 'Braxton.Stark@myemail.com',
       phone_number: '816.401.6748 x17658',
-      dob: 1963-07-25T22:01:02.650Z,
       job_title: 'Forward Identity Producer'
     },
     {
@@ -906,7 +806,6 @@
       title: 'Mrs',
       email_address: 'Kenya.Maggio@myemail.com',
       phone_number: '904-376-2282 x96708',
-      dob: 1948-05-11T14:39:10.845Z,
       job_title: 'Internal Research Agent'
     },
     {
@@ -915,7 +814,6 @@
       title: 'Sir',
       email_address: 'Thad.Haag@myemail.com',
       phone_number: '736.301.4653 x3054',
-      dob: 1993-11-29T23:46:27.996Z,
       job_title: 'Corporate Response Architect'
     },
     {
@@ -924,7 +822,6 @@
       title: 'Madam',
       email_address: 'Muhammad.Russel@myemail.com',
       phone_number: '816.843.9376',
-      dob: 1945-12-29T23:42:02.492Z,
       job_title: 'Product Solutions Agent'
     },
     {
@@ -933,7 +830,6 @@
       title: 'Mrs',
       email_address: 'Manuela.Kuhlman@myemail.com',
       phone_number: '237-794-7629 x3878',
-      dob: 1945-04-25T09:52:56.294Z,
       job_title: 'Forward Division Liaison'
     },
     {
@@ -942,7 +838,6 @@
       title: 'Miss',
       email_address: 'Alysha.Farrell@myemail.com',
       phone_number: '(970) 801-9761 x844',
-      dob: 1958-02-18T18:33:09.487Z,
       job_title: 'Regional Implementation Supervisor'
     },
     {
@@ -951,7 +846,6 @@
       title: 'Mrs',
       email_address: 'Abigale.Goldner@myemail.com',
       phone_number: '1-469-859-7162 x63114',
-      dob: 1955-10-24T05:57:43.228Z,
       job_title: 'Direct Solutions Strategist'
     },
     {
@@ -960,7 +854,6 @@
       title: 'Mr',
       email_address: 'Mekhi.Homenick@myemail.com',
       phone_number: '413.310.9148 x9243',
-      dob: 1937-05-17T02:00:07.008Z,
       job_title: 'Investor Web Engineer'
     },
     {
@@ -969,7 +862,6 @@
       title: 'Sir',
       email_address: 'Hilda.Fisher@myemail.com',
       phone_number: '(596) 550-2721 x93753',
-      dob: 1999-02-03T16:17:08.924Z,
       job_title: 'Dynamic Branding Producer'
     },
     {
@@ -978,7 +870,6 @@
       title: 'Sir',
       email_address: 'Lindsey.Thiel@myemail.com',
       phone_number: '593.252.0651 x083',
-      dob: 1983-10-14T14:48:23.191Z,
       job_title: 'Direct Program Administrator'
     },
     {
@@ -987,7 +878,6 @@
       title: 'Mrs',
       email_address: 'Tierra.Nikolaus@myemail.com',
       phone_number: '1-647-588-1391 x238',
-      dob: 1969-06-22T19:59:17.608Z,
       job_title: 'Dynamic Operations Assistant'
     },
     {
@@ -996,7 +886,6 @@
       title: 'Ms',
       email_address: 'Kristian.Grady@myemail.com',
       phone_number: '(637) 603-7680',
-      dob: 1956-10-11T17:33:32.810Z,
       job_title: 'Regional Integration Associate'
     },
     {
@@ -1005,7 +894,6 @@
       title: 'Mrs',
       email_address: 'Brittany.Schumm@myemail.com',
       phone_number: '203-938-9423',
-      dob: 1931-12-28T04:45:47.670Z,
       job_title: 'District Accounts Planner'
     }
   ]
