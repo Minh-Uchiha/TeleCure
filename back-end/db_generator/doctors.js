@@ -108,6 +108,8 @@ const specialties = ["Allergy and Immunology",
           let experience = randomNumber(5, 11)
           let av_rating = randomDecimal(3.7, 4.8)
           let patients_number = randomNumber(10, 1001)
+          let earnings = 20 * patients_number
+          let net_earnings  = (earnings * 90.0)/100.0
       
           doctors.push({
               "specialty": specialties[i],
@@ -120,7 +122,9 @@ const specialties = ["Allergy and Immunology",
               "years_expirience":experience,
               "average_ratings": av_rating,
               "available": true,
-              "patients_number": patients_number
+              "patients_number": patients_number,
+              "earnings": earnings.toFixed(2),
+              "net_earnings": net_earnings.toFixed(2)
           });
         }
         //console.log(`doctors: ${doctors}`)
