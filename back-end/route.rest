@@ -1,0 +1,29 @@
+GET http://localhost:8080/subscribers
+
+###
+
+GET http://localhost:8080/subscribers/631ccae3942c869287fd2ede
+
+###
+
+POST http://localhost:8080/subscribers
+Content-Type: application/json
+
+{
+    "forename":"Hexapoda",
+    "subscribedToChannel": "Telecure"
+}
+
+###
+
+DELETE http://localhost:8080/subscribers/631ccae3942c869287fd2ede
+
+###
+
+PATCH http://localhost:8080/subscribers/631cca7f942c869287fd2edb
+Content-Type: application/json
+
+{
+    ""
+    "subscribedToChannel": "Hexapoda"
+}
