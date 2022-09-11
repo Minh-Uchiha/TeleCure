@@ -33,7 +33,7 @@ const patientSchema = new Schema(
         required: true
     },
     dob: {
-        type: Date,
+        type: String,
         required: false
     },
     password: {

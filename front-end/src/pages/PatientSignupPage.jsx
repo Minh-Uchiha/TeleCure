@@ -12,8 +12,8 @@ const SignupForm = () => {
   const navigate = useNavigate();
   const { storeToken, isLoggedIn, authenticateUser } = useContext(AuthContext);
   const [user, setUser] = useState({
-    foreName: "",
-    surName: "",
+    forename: "",
+    surname: "",
     title: "",
     email_address: "",
     phone_number: "",
@@ -56,9 +56,9 @@ const SignupForm = () => {
         >
           <input
             type="text"
-            name="foreName"
+            name="forename"
             placeholder="First name"
-            value={user.foreName}
+            value={user.forename}
             onChange={handleChange}
           />
         </div>
@@ -68,9 +68,9 @@ const SignupForm = () => {
         >
           <input
             type="text"
-            name="surName"
+            name="surname"
             placeholder="Last name"
-            value={user.surName}
+            value={user.surname}
             onChange={handleChange}
           />
         </div>
