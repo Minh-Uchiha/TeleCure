@@ -27,6 +27,28 @@ io.on("connection", (socket) => {
     socket.to(room).emit("receive-message", message);
   });
 
+  socket.on("request-appointment", ({ name, description, room }) => {
+    console.log(name);
+    socket.emit("receive-appointment", { name, description, room });
+  });
+
+  socket.on("reject-request", (room) => {
+    socket.to(room).emit("cancel-request");
+  });
+
+  socket.on("success-payment", (room) => {
+    socket.to(room).emit("navtigate-chatroom");
+  });
+
+  socket.on(
+    "accept-request",
+    ({ dr_forename, title, dr_surname, specialty, room }) => {
+      socket
+        .to(room)
+        .emit("checkout", { dr_forename, title, dr_surname, specialty, room });
+    }
+  );
+
   socket.on("join-room", (room) => {
     socket.join(room);
   });

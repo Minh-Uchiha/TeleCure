@@ -46,3 +46,20 @@
     color: #f1f1f1;
     background-color: #ae00ff;
 }
+
+.patient-page .request-popup-form {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ae00ff;
+    background-color: #e7e7e7;
+    display: none;
+}
+
+.patient-page .request-popup-form.active {
+    display: block;
+}
+

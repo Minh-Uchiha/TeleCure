@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useUserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/auth.context";
 import "../../css/DoctorInfoCard.css";
 
 const InfoCard = () => {
   const { userInfo } = useUserContext();
+  const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const {
-    avatar,
     title,
     hospital,
     years_expirience,
     specialty,
     dr_forename,
     dr_surname,
-  } = userInfo;
+  } = user;
 
   const handleEditInfo = () => {
     navigate("/account");
@@ -23,7 +24,10 @@ const InfoCard = () => {
   return (
     <section className="info-container">
       <div className="avatar">
-        <img src={avatar} alt="doctor image" />
+        <img
+          src="https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000"
+          alt="doctor image"
+        />
         <p>{`${title} ${dr_forename} ${dr_surname}`}</p>
       </div>
       <div className="info">

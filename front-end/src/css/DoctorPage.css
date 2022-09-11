@@ -5,3 +5,41 @@
     grid-template-rows: repeat(2, auto);
     grid-gap: 30px;
 }
+
+.availability-switch-btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.availability-switch-btn-container button {
+    padding: 20px 70px;
+    font-size: 2rem;
+    border-radius: 30px;
+    border: none;
+    color: #ae00ff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.availability-switch-btn-container button:hover {
+    color: #fafafa;
+    background-color: #ae00ff;
+}
+
+.request-popup {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ae00ff;
+    background-color: #e7e7e7;
+    display: none;
+}
+
+.request-popup.active {
+    display: block;
+}

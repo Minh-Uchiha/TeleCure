@@ -13,23 +13,21 @@ const SignupForm = () => {
   const navigate = useNavigate();
   const { storeToken, isLoggedIn, authenticateUser } = useContext(AuthContext);
 
-  const { userInfo, setUserInfo } = useUserContext();
-
-  // const [user, setUser] = useState({
-  //   dr_forename: "",
-  //   dr_surname: "",
-  //   title: "",
-  //   specialty: "",
-  //   hospital: "",
-  //   years_expirience: "",
-  //   phone_number: "",
-  //   password: "",
-  //   reenteredPassword: "",
-  //   email_address: "",
-  // });
+  const [user, setUser] = useState({
+    forename: "",
+    surname: "",
+    title: "",
+    email_address: "",
+    phone_number: "",
+    job_title: "",
+    age: "",
+    dob: "",
+    password: "",
+    reenteredPassword: "",
+  });
 
   const handleChange = (e) =>
-    setUserInfo((oldUserInfo) => {
+    setUser((oldUserInfo) => {
       return { ...oldUserInfo, [e.target.name]: e.target.value };
     });
 
@@ -38,16 +36,13 @@ const SignupForm = () => {
 
     // Add user to the database
     axios
-      .post(
-        `${URL}/auth/${isSignUp ? "doctorSignup" : "doctorLogin"}`,
-        userInfo
-      )
+      .post(`${URL}/auth/${isSignUp ? "doctorSignup" : "doctorLogin"}`, user)
       .then((response) => {
         if (!isSignUp) {
           storeToken(response.data.authToken);
           authenticateUser();
         }
-        navigate("/doctor");
+        navigate("/");
       })
       .catch((error) => {
         const errorDescription = error.response.data.message;
@@ -66,7 +61,7 @@ const SignupForm = () => {
             type="text"
             name="dr_forename"
             placeholder="First name"
-            value={userInfo.dr_forename}
+            value={user.dr_forename}
             onChange={handleChange}
           />
         </div>
@@ -78,7 +73,7 @@ const SignupForm = () => {
             type="text"
             name="dr_surname"
             placeholder="Last name"
-            value={userInfo.dr_surname}
+            value={user.dr_surname}
             onChange={handleChange}
           />
         </div>
@@ -90,7 +85,7 @@ const SignupForm = () => {
             type="text"
             name="title"
             placeholder="Dr./Mr./Ms./Mrs./"
-            value={userInfo.title}
+            value={user.title}
             onChange={handleChange}
           />
         </div>
@@ -102,7 +97,7 @@ const SignupForm = () => {
             type="text"
             name="specialty"
             placeholder="Specialty"
-            value={userInfo.specialty}
+            value={user.specialty}
             onChange={handleChange}
           />
         </div>
@@ -114,7 +109,7 @@ const SignupForm = () => {
             type="text"
             name="hospital"
             placeholder="Hospital"
-            value={userInfo.hospital}
+            value={user.hospital}
             onChange={handleChange}
           />
         </div>
@@ -126,7 +121,7 @@ const SignupForm = () => {
             type="text"
             name="years_expirience"
             placeholder="Years of Experience"
-            value={userInfo.years_expirience}
+            value={user.years_expirience}
             onChange={handleChange}
           />
         </div>
@@ -135,7 +130,7 @@ const SignupForm = () => {
             type="text"
             name="email_address"
             placeholder="Email"
-            value={userInfo.email_address}
+            value={user.email_address}
             onChange={handleChange}
           />
         </div>
@@ -147,7 +142,7 @@ const SignupForm = () => {
             type="text"
             name="phone_number"
             placeholder="Phone number"
-            value={userInfo.phone_number}
+            value={user.phone_number}
             onChange={handleChange}
           />
         </div>
@@ -156,7 +151,7 @@ const SignupForm = () => {
             type="password"
             name="password"
             placeholder="Password"
-            value={userInfo.password}
+            value={user.password}
             onChange={handleChange}
           />
         </div>
@@ -168,7 +163,7 @@ const SignupForm = () => {
             type="password"
             name="reenteredPassword"
             placeholder="Re-enter password"
-            value={userInfo.reenteredPassword}
+            value={user.reenteredPassword}
             onChange={handleChange}
           />
         </div>

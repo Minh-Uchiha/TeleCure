@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserDoctor } from "@fortawesome/free-solid-svg-icons";
 import "../../css/DoctorNav.css";
+import { AuthContext } from "../../context/auth.context";
 import { useUserContext } from "../../context/UserContext";
 
 const DoctorNav = () => {
   const { isSignUp } = useUserContext();
+  const { isLoggedIn } = useContext(AuthContext);
 
   return (
     <div className="welcome-option-box">
       <Link
-        to={isSignUp ? "/doctor" : `/signup/doctor`}
+        to={isLoggedIn ? "/doctor" : `/signup/doctor`}
         className="doctor-nav link"
       >
         Doctor
