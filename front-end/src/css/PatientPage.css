@@ -56,10 +56,24 @@
     transform: translateX(-50%);
     color: #ae00ff;
     background-color: #e7e7e7;
+    padding: 10px;
     display: none;
 }
 
+.patient-page .request-popup-form input {
+    margin: 20px;
+    padding: 5px 10px;
+}
+
+.patient-page .request-popup-form button {
+    margin: 20px;
+    padding: 5px 10px;
+}
+
 .patient-page .request-popup-form.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 

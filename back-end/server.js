@@ -29,7 +29,7 @@ io.on("connection", (socket) => {
 
   socket.on("request-appointment", ({ name, description, room }) => {
     console.log(name);
-    socket.emit("receive-appointment", { name, description, room });
+    io.emit("receive-appointment", { name, description, room });
   });
 
   socket.on("reject-request", (room) => {
