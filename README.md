@@ -3,7 +3,7 @@ A web application that provide remote healthcare
 ## Inspiration
 Due to Covid-19, many patients have had difficulties obtaining specialist medical advice. In some cases, the hurdles may be that the patient lives in a rural or poor area where medical care is not provided. 
 In the past few years, Telemedicine has gained an essential role in the healthcare sector. Remote healthcare helps alleviate these boundaries. For this reason, our team has embarked on a new project: TeleCure a web application that provides remote healthcare for everyone!
-Price for a consultations may varies per country and they can be very costly (e.g. for a consultation with a psychiatrist in the UK one might spend  $632. Whilst on average a specialist in the US charge upward of $250). For this reason we have decided to provide a more affordable service: $60 per consultation lasting 50minutes.
+Price for a consultations may varies per country and they can be very costly (e.g. for a consultation with a psychiatrist in the UK one might spend  $632. Whilst on average a specialist in the US charge upward of $250). For this reason we have decided to provide a more affordable service: $60 per consultation.
 
 ## What it does
 TeleCure can be accessed in two ways, as a doctor or as a patient. Access is granted from the home page 
