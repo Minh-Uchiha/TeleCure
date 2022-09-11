@@ -89,7 +89,7 @@ const SignupForm = () => {
           <input
             type="text"
             name="title"
-            placeholder="Mr./Ms./Mrs."
+            placeholder="Dr./Mr./Ms./Mrs./"
             value={userInfo.title}
             onChange={handleChange}
           />
@@ -198,11 +198,11 @@ const SignupForm = () => {
 };
 
 const DoctorSignupPage = () => {
-  const { isLoggedIn } = useContext(AuthContext);
+  const { isSignUp } = useUserContext();
   return (
     <div className="signup-form-container">
-      {isLoggedIn && <h1 style={{ color: "#635bff" }}>Welcome back Doctor!</h1>}
-      {!isLoggedIn && (
+      {isSignUp && <h1 style={{ color: "#635bff" }}>Welcome back Doctor!</h1>}
+      {!isSignUp && (
         <>
           <h1 style={{ color: "#635bff" }}>
             Sign up to be a doctor at TeleCure!
