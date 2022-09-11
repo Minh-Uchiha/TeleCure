@@ -2,10 +2,13 @@
 const express = require("express");
 const cors = require("cors");
 
-const app = express();
-const PORT = process.env.PORT || 8080;
+require("dotenv/config");
 
-require('dontenv').config();
+//connects to database
+require("./db");
+
+const app = express();
+const PORT = process.env.PORT || 5005;
 
 // Enable neccessary middlewares
 app.use(express.json());
@@ -18,11 +21,12 @@ app.get('/', (req, res) =>{
 
 
 //route imports
-const chatRoutes = require("./routes/chat.routes");
-app.use("/", chatRoutes);
+// const chatRoutes = require("./routes/chat.routes");
+// app.use("/", chatRoutes);
 
-const authRoutes = require('./routes/auth.js');
-app.use("/", authRoutes)
+const authRoutes = require('./routes/auth.routes');
+app.use("/auth", authRoutes)
 
 // Listen to the port
 app.listen(PORT, () => console.log("Server is listening to port " + PORT));
+module.exports = app;

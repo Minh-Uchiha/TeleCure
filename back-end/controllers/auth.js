@@ -1,108 +1,119 @@
-const { connect } = require('getstream');
 const bcrypt = require('bcrypt');
-const StreamChat = require('stream-chat');
-const crypto = require('crypto');
+const jwt = require('jsonwebtoken');
+const Doctor = require("../models/Doctor.model");
 
-const api_key = process.env.STREAM_API_KEY;
-const api_secret = process.env.STREAM_API_SECRET;
-const app_id = process.env.STREAM_APP_ID;
+const router = require("express").Router();
 
-const patientSignup = async (req, res) => {
-    try{
-        const { forename, surname, title, email_address, job_title, age, password, phone_number, dob } = req.body;
+const saltRounds = 10;
 
-        const userId = crypto.randomBytes(16).toString('hex');
-
-        const serverClient = connect(api_key, api_secret, app_id);
-        //encrypt password
-        const hashedPassword = await bcrypt.hash(password, 10)
-
-        const token = serverClient.createUserToken(userId);
-
-        res.status(200).json({ token, forename, surname, title, email_address, job_title, age, hashedPassword, phone_number, dob });
-    } catch (error){
-        console.log(error);
-
-        res.status(500).json({ message: error });
-    }
-}
-
-const patientLogin = async (req, res) => {
-    try{
-        const { email_address, password } = req.body;
-
-        const serverClient = connect(api_key, api_secret, app_id);
-        const client = StreamChat.getInstance(api_key, api_secret);
-
-        const { users } = await client.queryUsers({ email_address: email_address });
-
-        if(!users.length) return res.status(400).json({ message: "User not found" });
-
-        const success = await bcrypt.compare(password, users[0].hashedPassword);
-
-        const token = serverClient.createUserToken(users[0].id);
-
-        if(success){
-            res.status(200).json({ token, forename: users[0].forename, surname: users[0].surname, title, email_address, job_title, age, password, phone_number, userId: users[0].id});
-        } else{
-            res.status(500).json({message: "Incorrect password" });
+const doctorSignup = (req, res) => {
+    try {
+        const { dr_forename, dr_surname, title, specialty, hospital, years_expirience,  phone_number, password, reenteredPassword, email_address } = req.body;
+        if(dr_forename === '' || dr_surname === '' || specialty === '' || title === '' || hospital === '' || years_expirience === '' || phone_number === '' ||  email_address === '' || password === ''){
+            res.status(400).json({message:"Fill out all fields"});
+            return;
         }
-    } catch (error){
-        console.log(error);
-
-        res.status(500).json({ message: error });
-    }
-}
-
-const doctorSignup = async (req, res) => {
-    try{
-        const { specialty, dr_forename, dr_surname, title, email_address, hospital, years_expirience, password, phone_number, avatar } = req.body;
-
-        const userId = crypto.randomBytes(16).toString('hex');
-
-        const serverClient = connect(api_key, api_secret, app_id);
-        //encrypt password
-        const hashedPassword = await bcrypt.hash(password, 10)
-
-        const token = serverClient.createUserToken(userId);
-
-        //defaults
-        const avarage_ratings = 0;
-        const available = true;
-        const earnings = 0;
-        const net_earnings = 0;
-
-        res.status(200).json({ token, specialty, dr_forename, dr_surname, title, email_address, hospital, years_expirience, avarage_ratings, available, earnings, net_earnings, hashedPassword, phone_number, avatar});
-    } catch (error){
-        console.log(error);
-
-        res.status(500).json({ message: error });
-    }
-}
-
-const doctorLogin = async (req, res) => {
-    try{
-        const { email_address, password } = req.body;
-
-        const serverClient = connect(api_key, api_secret, app_id);
-        const client = StreamChat.getInstance(api_key, api_secret);
-
-        const { users } = await client.queryUsers({ email_address: email_address });
-
-        if(!users.length) return res.status(400).json({ message: "User not found" });
-
-        const success = await bcrypt.compare(password, users[0].hashedPassword);
-
-        const token = serverClient.createUserToken(users[0].id);
-
-        if(success){
-            res.status(200).json({ token, specialty, dr_forename: users[0].dr_forename, dr_surname: users[0].dr_surname, title, email_address, hospital, years_expirience, average_ratings, available, earnings, net_earnings, hashedPassword, phone_number, avatar, userId: users[0].id});
-        } else{
-            res.status(500).json({message: "Incorrect password" });
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        if (!emailRegex.test(email_address)) {
+            res.status(400).json({ message: 'Provide a valid email address.' });
+            return;
         }
-    } catch (error){
-        console.log(error);
+        const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+        if (!passwordRegex.test(password)) {
+            res.status(400).json({ message: 'Password must have at least 6 characters and contain at least one number, one lowercase and one uppercase letter.' });
+            return;
+        } 
+        Doctor.findOne({ email_address })
+        .then((foundUser) => {
+            // If the user with the same email already exists, send an error response
+            if (foundUser) {
+                res.status(400).json({ message: "Email address in use." });
+                return;
+            }
+            if(!foundUser) {
+                //encrypt password
+                const salt = bcrypt.genSaltSync(saltRounds);
+                const hashedPassword = bcrypt.hashSync(password, salt);
 
+                // Create the new user in the database
+                // We return a pending promise, which allows us to chain another `then` 
+                return Doctor.create({ dr_forename, dr_surname, title, specialty, hospital, years_expirience, phone_number, email_address, password: hashedPassword });
+            }
+        }).then(createdUser =>{
+            // Deconstruct the newly created user object to omit the password
+            // We should never expose passwords publicly
+            if(createdUser){
+                const { dr_forename, dr_surname, title, specialty, hospital, years_expirience, phone_number, email_address } = createdUser;
+                console.log("in progress 5 ===========>")
+                // Create a new object that doesn't expose the password
+                const user = { dr_forename, dr_surname, title, specialty, hospital, years_expirience, phone_number, email_address };
+                // Send a json response containing the user object
+                res.status(201).json({ user: user });
+            }
+        })
+    }
+     catch (error){
+        console.log(error);
         res.status(500).json({ message: error });
     }
+    console.log("account created")
+}
+
+const doctorLogin = (req, res) => {
+    const { email_address, password } = req.body;
+ 
+    // Check if email or password are provided as empty string 
+    if (email_address === '' || password === '') {
+        res.status(400).json({ message: "Provide email and password." });
+        return;
+    }
+   
+    // Check the users collection if a user with the same email exists
+    Doctor.findOne({ email_address })
+    .then((foundUser) => {
+        
+        if (!foundUser) {
+            // If the user is not found, send an error response
+            res.status(401).json({ message: "User not found." })
+            return;
+        }
+
+        // Compare the provided password with the one saved in the database
+        const passwordCorrect = bcrypt.compareSync(password, foundUser.password);
+    
+        if (passwordCorrect) {
+            // Deconstruct the user object to omit the password
+            const { _id, dr_forename, dr_surname, title, specialty, hospital, years_expirience, phone_number, email_address } = foundUser;
+            
+            // Create an object that will be set as the token payload
+            const payload = { _id, dr_forename, dr_surname, title, specialty, hospital, years_expirience, phone_number, email_address };
+            // Create and sign the token
+            const authToken = jwt.sign( 
+            payload,
+            process.env.TOKEN_SECRET,
+            { algorithm: 'HS256', expiresIn: "6h" }
+            );
+
+            // Send the token as the response
+            res.status(200).json({ authToken: authToken });
+        }
+        else {
+            res.status(401).json({ message: "Unable to authenticate the user" });
+        }
+    
+    })
+    .catch(err => res.status(500).json({ message: "Internal Server Error" }));
+}
+
+// const patientSignup = async (req, res) => {
+    
+// }
+
+// const patientLogin = async (req, res) => {
+
+// }
+
+module.exports = {
+    doctorLogin,
+    doctorSignup,
 }
