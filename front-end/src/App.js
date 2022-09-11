@@ -13,6 +13,7 @@ import {
   PatientSignupPage,
   SuccessPaymentPage,
   WelcomePage,
+  // StreamChat,
 } from "./pages";
 import { Header, Footer } from "./components/main-components";
 import { UserProvider } from "./context/UserContext";
@@ -32,6 +33,7 @@ function App() {
             <Route path="/patient" element={<PatientPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/chatroom" element={<ChatRoomPage />} />
+            {/* <Route path="/streamchat" element={<StreamChat/>} /> */}
             <Route path="/signup/doctor" element={<DoctorSignupPage />} />
             <Route path="/signup/patient" element={<PatientSignupPage />} />
             <Route path="/account" element={<AccountPage />} />

@@ -3,8 +3,8 @@ const auth = require('../controllers/auth.js');
 const router = express.Router();
 const { isAuthenticated } = require('../middleware/jwt.middleware.js');
 
-// router.post('/patientSignup', (req, res)=>patientSignup);
-// router.post('/patientLogin', (req, res)=>patientLogin);
+router.post('/patientSignup', auth.patientSignup);
+router.post('/patientLogin', auth.patientLogin);
 
 router.post('/doctorSignup', auth.doctorSignup);
 router.post('/doctorLogin', auth.doctorLogin);

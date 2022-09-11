@@ -1,16 +1,11 @@
 import React from "react";
-import { useEffect } from "react";
-import { useUserContext } from "../context/UserContext";
+import { useContext } from "react";
+import { AuthContext } from "../context/auth.context";
 import { Link } from "react-router-dom";
 import "../css/PatientPage.css";
 
 const PatientPage = () => {
-  const { signedIn, userInfo, setUserToDoctor } = useUserContext();
-  const { foreName, surName } = userInfo;
-
-  useEffect(() => {
-    setUserToDoctor(false);
-  }, []);
+  const { user, isLoggedIn } = useContext(AuthContext);
 
   const handleMakeAppointment = () => {};
 
@@ -19,13 +14,13 @@ const PatientPage = () => {
       <div className="greettings">
         <h1>
           Welcome
-          {signedIn ? (
-            <span className="link">{foreName + " " + surName}</span>
-          ) : (
+          {isLoggedIn &&
+            <span className="link">{user.forename + " " + user.surname}</span>
+          }{!isLoggedIn &&
             <Link className="link" to="/signup/patient">
               Sign in
             </Link>
-          )}
+          }
         </h1>
       </div>
       <div className="make-appointment-container">
