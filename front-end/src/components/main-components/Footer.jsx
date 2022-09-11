@@ -5,7 +5,7 @@ import "../../css/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <p>This is the footer</p>
+      <p>A product made by Sirius team</p>
       <Link className="link" to="/about">
         About us
       </Link>

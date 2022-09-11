@@ -1,14 +1,36 @@
 // Import neccessary libraries
 const express = require("express");
 const cors = require("cors");
+const http = require("http");
+const { Server } = require("socket.io");
 
 require("dotenv/config");
 
 //connects to database
 require("./db");
 
-const app = express();
 const PORT = process.env.PORT || 8080;
+const app = express();
+const server = http.createServer(app);
+const io = new Server(server, {
+  cors: {
+    origin: ["http://localhost:3000"],
+    methods: ["GET", "POST"],
+  },
+});
+
+// Listening to socket events
+io.on("connection", (socket) => {
+  console.log("Connected: " + socket.id);
+
+  socket.on("send-message", ({ message, room }) => {
+    socket.to(room).emit("receive-message", message);
+  });
+
+  socket.on("join-room", (room) => {
+    socket.join(room);
+  });
+});
 
 // Enable neccessary middlewares
 app.use(express.json());
@@ -30,5 +52,5 @@ const checkoutRoutes = require("./routes/checkout");
 app.use("/create-checkout-session", checkoutRoutes);
 
 // Listen to the port
-app.listen(PORT, () => console.log("Server is listening to port " + PORT));
+server.listen(PORT, () => console.log("Server is listening to port " + PORT));
 module.exports = app;

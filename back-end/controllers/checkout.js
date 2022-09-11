@@ -13,7 +13,7 @@ const createCheckOutSession = async (req, res) => {
               name: item.title + " " + item.dr_forename + " " + item.dr_surname,
               description: item.specialty + " advising session",
             },
-            unit_amount: 60000,
+            unit_amount: 6000,
           },
           quantity: 1,
         };
