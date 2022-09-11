@@ -1,0 +1,26 @@
+.appointment-history-container {
+    width: 80vw;
+    background-color: #635bff;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+.appointment-history-container h1 {
+    margin-left: 40px;
+}
+
+.appointment p {
+    display: inline-block;
+}
+
+.appointment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fafafa;
+    color: #635bff;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 30px;
+}

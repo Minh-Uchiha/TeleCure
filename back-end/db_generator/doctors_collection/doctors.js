@@ -120,11 +120,11 @@ const specialties = ["Allergy and Immunology",
               "phone_number": phone_number,
               "hospital": hospital,
               "years_expirience":experience,
-              "average_ratings": av_rating.toFixed(2),
+              "average_ratings": av_rating,
               "available": true,
               "patients_number": patients_number,
-              "earnings": earnings.toFixed(2),
-              "net_earnings": net_earnings.toFixed(2)
+              "earnings": earnings,
+              "net_earnings": net_earnings
           });
         }
         //console.log(`doctors: ${doctors}`)
@@ -133,12 +133,13 @@ const specialties = ["Allergy and Immunology",
       
       let dataObj = generateDoctors();
       var obj_str = util.inspect(dataObj);
+     
       console.log(obj_str);
       fs.writeFile('doctors.txt', obj_str, (err) => {
       
         // In case of a error throw err.
         if (err) throw err;
-    })
+    });
 
     //doctor schema of the type ```{
     //     "dr_forename": "",

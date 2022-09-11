@@ -1,0 +1,61 @@
+.doctor-info-card .info-container img {
+    height: 350px;
+    border-radius: 50%;
+}
+
+.doctor-info-card {
+    position: relative;
+    width: 80vw;
+    padding: 50px 40px;
+    margin: 0 auto;
+    background-color: #635bff;
+    border-radius: 30px;
+    height: 850px;
+}
+
+.doctor-info-card .info-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.doctor-info-card .info-container .avatar {
+    text-align: center;
+}
+
+.doctor-info-card .info-container .avatar p {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.doctor-info-card .info-container .info {
+    padding: 5%;
+    text-align: center;
+}
+
+.doctor-info-card .info-container .info h2 {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.doctor-info-card .info-container .info p {
+    font-size: 1.6rem;
+    margin: 40px 0;
+}
+
+.doctor-info-card .info-container .info button {
+    border: none;
+    border-radius: 15px;
+    padding: 10px 70px;
+    margin: 50px;
+    color: #635bff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.doctor-info-card .info-container .info button:hover {
+    color: #ae00ff;
+}
