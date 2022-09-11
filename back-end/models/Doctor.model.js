@@ -63,9 +63,9 @@ const doctorSchema = new Schema(
         type: Number,
         default: 0
     },
-    chat_log: [{
+    chat_list: [{
         type: Schema.Types.ObjectId,
-        ref: 'Message'
+        ref: 'ChatList'
     }]
     },
     {
