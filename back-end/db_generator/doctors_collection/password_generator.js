@@ -13,3 +13,11 @@ db.doctors.find({}).forEach(function(doc){
     password = generatePassword()
     db.doctors.update({"_id":id},{$set:{"password":password}})
 });
+
+//make the email lowercase
+db.doctors.find({}).forEach(function(doc){
+    id = doc["_id"]
+    email = doc["email_address"]
+    email_address= email.toLowerCase();
+    db.doctors.update({"_id":id},{$set:{"email_address":email_address}})
+});
