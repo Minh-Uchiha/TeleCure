@@ -7,7 +7,7 @@ import "../../css/DoctorNav.css";
 const DoctorNav = () => {
   return (
     <div className="welcome-option-box">
-      <Link to="/doctor" className="doctor-nav link">
+      <Link to="/signup/doctor" className="doctor-nav link">
         Doctor
         <FontAwesomeIcon className="icon" icon={faUserDoctor} />
       </Link>
