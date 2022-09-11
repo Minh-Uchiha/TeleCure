@@ -7,13 +7,13 @@ const InfoCard = () => {
   const { userInfo } = useUserContext();
   const navigate = useNavigate();
   const {
-    imageUrl,
+    avatar,
     title,
     hospital,
-    yearsOfExperience,
+    years_expirience,
     specialty,
-    foreName,
-    surName,
+    dr_forename,
+    dr_surname,
   } = userInfo;
 
   const handleEditInfo = () => {
@@ -23,13 +23,13 @@ const InfoCard = () => {
   return (
     <section className="info-container">
       <div className="avatar">
-        <img src={imageUrl} alt="doctor image" />
-        <p>{`${title} ${foreName} ${surName}`}</p>
+        <img src={avatar} alt="doctor image" />
+        <p>{`${title} ${dr_forename} ${dr_surname}`}</p>
       </div>
       <div className="info">
         <h2>{hospital}</h2>
         <p>{specialty}</p>
-        <p>{yearsOfExperience} years of experience</p>
+        <p>{years_expirience} years of experience</p>
         <button onClick={handleEditInfo}>Edit info</button>
       </div>
     </section>

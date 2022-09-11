@@ -7,20 +7,20 @@ const UserContext = React.createContext();
 export const UserProvider = ({ children }) => {
   const [isDoctor, setIsDoctor] = useState(true);
   const [userInfo, setUserInfo] = useState({
-    foreName: "Minh",
-    surName: "Pham",
-    title: "Dr",
-    specialty: "Neurological Surgeon",
-    hospital: "XYZ Hospital",
-    phonenumber: "8134056519",
-    password: "Password",
-    yearsOfExperience: 10,
-    averageRatings: 3.5,
-    netEarnings: 10000,
-    earnings: 17226,
-    patientNumber: 1000,
-    email: "minhquangpham@telecure.com",
-    imageUrl:
+    dr_forename: "",
+    dr_surname: "",
+    title: "",
+    specialty: "",
+    hospital: "",
+    phone_number: "",
+    password: "",
+    years_expirience: 0,
+    average_ratings: 0,
+    net_earnings: 0,
+    earnings: 0,
+    patients_number: 0,
+    email_address: "",
+    avatar:
       "https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=2000",
   });
   const [signedIn, setSignedIn] = useState(true);
@@ -31,19 +31,13 @@ export const UserProvider = ({ children }) => {
 
   const setStatusToSignedIn = (isSignedIn) => setSignedIn(isSignedIn);
 
-  const updateUserInfo = (user) => {
-    setUserInfo((oldUserInfo) => {
-      return { ...oldUserInfo, ...user };
-    });
-  };
-
   return (
     <UserContext.Provider
       value={{
         isDoctor,
         userInfo,
         setUserToDoctor,
-        updateUserInfo,
+        setUserInfo,
         setStatusToSignedIn,
         signedIn,
       }}

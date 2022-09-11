@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
-import { AuthContext } from '../context/auth.context';
+import axios from "axios";
+import { AuthContext } from "../context/auth.context";
+import { useUserContext } from "../context/UserContext";
 import "../css/SignupPage.css";
 
 const URL = process.env.REACT_APP_API_URL;
@@ -12,45 +13,50 @@ const SignupForm = () => {
   const navigate = useNavigate();
   const { storeToken, isLoggedIn, authenticateUser } = useContext(AuthContext);
 
-  const [user, setUser] = useState({
-    dr_forename: "",
-    dr_surname: "",
-    title: "",
-    specialty: "",
-    hospital: "",
-    years_expirience: "",
-    phone_number: "",
-    password: "",
-    reenteredPassword: "",
-    email_address: "",
-  });
+  const { userInfo, setUserInfo } = useUserContext();
 
-  const handleChange = (e) => {
-    setUser((oldUser) => {
-      return { ...oldUser, [e.target.name]: e.target.value };
+  // const [user, setUser] = useState({
+  //   dr_forename: "",
+  //   dr_surname: "",
+  //   title: "",
+  //   specialty: "",
+  //   hospital: "",
+  //   years_expirience: "",
+  //   phone_number: "",
+  //   password: "",
+  //   reenteredPassword: "",
+  //   email_address: "",
+  // });
+
+  const handleChange = (e) =>
+    setUserInfo((oldUserInfo) => {
+      return { ...oldUserInfo, [e.target.name]: e.target.value };
     });
-  };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post(`${URL}/auth/${isSignUp ? 'doctorSignup' : 'doctorLogin'}`, user)
-    .then(response => {
-      if(!isSignUp){
-        storeToken(response.data.authToken)
-        authenticateUser();
-      }
-      navigate('/');
-    })
-    .catch((error) => {
-      const errorDescription = error.response.data.message;
-      setError(errorDescription);
-    })
+    // Add user to the database
+    axios
+      .post(
+        `${URL}/auth/${isSignUp ? "doctorSignup" : "doctorLogin"}`,
+        userInfo
+      )
+      .then((response) => {
+        if (!isSignUp) {
+          storeToken(response.data.authToken);
+          authenticateUser();
+        }
+        navigate("/doctor");
+      })
+      .catch((error) => {
+        const errorDescription = error.response.data.message;
+        setError(errorDescription);
+      });
   };
-  if(!isLoggedIn){
+  if (!isLoggedIn) {
     return (
       <form className="sign-up-form">
-
         <p className="error">{error}</p>
         <div
           style={{ display: `${isSignUp ? "block" : "none"}` }}
@@ -60,7 +66,7 @@ const SignupForm = () => {
             type="text"
             name="dr_forename"
             placeholder="First name"
-            value={user.dr_forename}
+            value={userInfo.dr_forename}
             onChange={handleChange}
           />
         </div>
@@ -72,7 +78,7 @@ const SignupForm = () => {
             type="text"
             name="dr_surname"
             placeholder="Last name"
-            value={user.dr_surname}
+            value={userInfo.dr_surname}
             onChange={handleChange}
           />
         </div>
@@ -84,7 +90,7 @@ const SignupForm = () => {
             type="text"
             name="title"
             placeholder="Mr./Ms./Mrs."
-            value={user.title}
+            value={userInfo.title}
             onChange={handleChange}
           />
         </div>
@@ -96,7 +102,7 @@ const SignupForm = () => {
             type="text"
             name="specialty"
             placeholder="Specialty"
-            value={user.specialty}
+            value={userInfo.specialty}
             onChange={handleChange}
           />
         </div>
@@ -108,7 +114,7 @@ const SignupForm = () => {
             type="text"
             name="hospital"
             placeholder="Hospital"
-            value={user.hospital}
+            value={userInfo.hospital}
             onChange={handleChange}
           />
         </div>
@@ -120,7 +126,7 @@ const SignupForm = () => {
             type="text"
             name="years_expirience"
             placeholder="Years of Experience"
-            value={user.years_expirience}
+            value={userInfo.years_expirience}
             onChange={handleChange}
           />
         </div>
@@ -129,7 +135,7 @@ const SignupForm = () => {
             type="text"
             name="email_address"
             placeholder="Email"
-            value={user.email_address}
+            value={userInfo.email_address}
             onChange={handleChange}
           />
         </div>
@@ -141,7 +147,7 @@ const SignupForm = () => {
             type="text"
             name="phone_number"
             placeholder="Phone number"
-            value={user.phone_number}
+            value={userInfo.phone_number}
             onChange={handleChange}
           />
         </div>
@@ -150,7 +156,7 @@ const SignupForm = () => {
             type="password"
             name="password"
             placeholder="Password"
-            value={user.password}
+            value={userInfo.password}
             onChange={handleChange}
           />
         </div>
@@ -162,7 +168,7 @@ const SignupForm = () => {
             type="password"
             name="reenteredPassword"
             placeholder="Re-enter password"
-            value={user.reenteredPassword}
+            value={userInfo.reenteredPassword}
             onChange={handleChange}
           />
         </div>
@@ -179,30 +185,31 @@ const SignupForm = () => {
             {isSignUp ? "Sign in" : "Sign up"}
           </span>
         </p>
-        { error && <p className="error-message">{error}</p> }
+        {error && <p className="error-message">{error}</p>}
       </form>
     );
-  }else if(isLoggedIn){
+  } else if (isLoggedIn) {
     return (
       <form className="sign-up-form">
         <p>Already logged in!</p>
       </form>
-    )
+    );
   }
-}
+};
 
 const DoctorSignupPage = () => {
   const { isLoggedIn } = useContext(AuthContext);
   return (
     <div className="signup-form-container">
-      {isLoggedIn &&
-        <h1 style={{ color: "#635bff" }}>Welcome back Doctor!</h1>
-      }{!isLoggedIn &&
+      {isLoggedIn && <h1 style={{ color: "#635bff" }}>Welcome back Doctor!</h1>}
+      {!isLoggedIn && (
         <>
-          <h1 style={{ color: "#635bff" }}>Sign up to be a doctor at TeleCure!</h1>
+          <h1 style={{ color: "#635bff" }}>
+            Sign up to be a doctor at TeleCure!
+          </h1>
           <SignupForm />
         </>
-      }
+      )}
     </div>
   );
 };
