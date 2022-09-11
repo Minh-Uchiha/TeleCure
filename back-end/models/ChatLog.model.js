@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-const chatSchema = new Schema(
+const chatLogSchema = new Schema(
     {
         dr_id: {
             type: Schema.Types.ObjectId,
@@ -20,4 +20,4 @@ const chatSchema = new Schema(
     }
 );
 
-module.exports = model("Chat", chatSchema);
+module.exports = model("ChatLog", chatLogSchema);

@@ -40,10 +40,10 @@ const patientSchema = new Schema(
         type: String,
         required: true,
     },
-    chat: {
-        type: Array,
-        default: [],
-    },
+    chat_list: [{
+        type: Schema.Types.ObjectId,
+        ref: 'ChatList'
+    }]
   },
   {
     timestamps: true,
