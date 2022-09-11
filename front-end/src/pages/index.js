@@ -10,3 +10,4 @@ export { default as DoctorSignupPage } from "./DoctorSignupPage";
 export { default as PatientSignupPage } from "./PatientSignupPage";
 export { default as AccountPage } from "./AccountPage";
 export { default as AboutPage } from "./AboutPage";
+export { default as StreamChatPage } from './StreamChatPage';
